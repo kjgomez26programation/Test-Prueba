@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    background-color: #b1aaaa;
+}
+
+.logo {
+    margin-right: 10px;
+}
+  
+.logo img {
+    height: 50px;
+}
+  
+h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.form-container {
+    max-width: 400px;
+    margin: 20px auto;
+  }
+  
+  form {
+    
+    padding: 20px;
+  }
+  
+  form h2 {
+    margin-top: 0;
+  }
+  input[type="text"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  .button-txt{
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #040404;
+    color: white;
+    border: none;
+    cursor: pointer;
+
+    &:hover{
+        background-color: gray;
+        color: #040404;
+    }
+  }
+
+  .button-tx{
+    padding: 10px 20px;
+    color: white;
+    background-color: #040404;
+    border: none;
+    position: absolute;
+    top: 5.3%;
+    right: 10px; 
+    transform: translateY(-50%)
+  }
+  .button-tx:hover{
+    background-color:white;
+    color: #040404;
+  }
+.btn-dark{
+  background-color: #040404;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  margin-left: 2px;
+}
+.btn-gray{
+  background-color: #b1aaaa;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  margin-left: 2px;
+}
+.txt-tamaño{
+  font-size: 16px;
+  padding: 10px; 
+  width: 200px;
+  height: 32px; 
+}
+.btn-list{
+  background-color: #040404;
+  color: white;
+
+}
+.link{
+  color: black;
+}

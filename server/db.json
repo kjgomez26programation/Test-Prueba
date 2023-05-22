@@ -1,0 +1,63 @@
+{
+  "notes": [
+    {
+      "title": "Jhojana",
+      "content": "Developer",
+      "relevance": "normal",
+      "email": "kallyjhojanagomez@gmail.com",
+      "id": 1684722989649
+    },
+    {
+      "title": "Julian",
+      "content": "Pasante",
+      "relevance": "normal",
+      "email": "dayabaporras@gmail.com",
+      "id": 1684776556817
+    },
+    {
+      "title": "Valentina",
+      "content": "Marketing",
+      "relevance": "normal",
+      "email": "dayabaporras@gmail.com",
+      "id": 1684777418400
+    }
+  ],
+  "users": [
+    {
+      "email": "kallyjhojanagomez@gmail.com",
+      "username": "kally",
+      "password": "123123",
+      "id": 1684599885102
+    },
+    {
+      "email": "kallyjhojanagomez2@gmail.com",
+      "username": "jhojana",
+      "password": "123123",
+      "id": 1684599930189
+    },
+    {
+      "email": "kallyjhojanagomez3@gmail.com",
+      "username": "kelly",
+      "password": "123123",
+      "id": 1684640467873
+    },
+    {
+      "email": "dayabaporras@gmail.com",
+      "username": "day28",
+      "password": "12345",
+      "id": 1684682370211
+    },
+    {
+      "email": "dayabaporras@gmail.com",
+      "username": "12345",
+      "password": "ter",
+      "id": 1684732347490
+    },
+    {
+      "email": "programador2023x@gmail.com",
+      "username": "programadoreact",
+      "password": "123456",
+      "id": 1684769049385
+    }
+  ]
+}

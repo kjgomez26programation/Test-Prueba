@@ -1,0 +1,396 @@
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+:root{
+
+    /*Colors*/
+
+    --primaruColor:black;
+    --hoverColor:rgb(52, 61, 61);
+    --paleBlue:rgb(231, 238, 244);
+    --whiteColor:rgb(16, 15, 15);
+    --blackColor:black;
+    --greyText:rgb(212, 205, 205);
+    --bgColor:rgb(246, 233, 233);
+    --inputColor:rgb(224, 224, );
+
+    /*Typography*/
+
+    --biggestFontSize: 2.5rem;
+    --h1FontSize:1.5rem;
+    --h2FontSize:1.25rem;
+    --h3FontSize:1rem;
+    --normalFontSize: .813erem;
+    --smalletFontSize:.75rem;
+
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.grid{
+    display: grid;
+    align-items: center;
+    gap:1.5rem;
+}
+html{
+    font-size: 90%;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.icon{
+    font-size: var(--h2FontSize);
+    cursor: pointer;
+}
+img, video{
+    height: auto;
+    width: 100%;
+
+
+}
+.message{
+    display: none; 
+}
+.showMessage{
+    display: block;
+    color: var(--primaruColor);
+    padding: 10px;
+    border-radius: 3px;
+    text-align: center;
+}
+.showMessage{
+    display: block;
+    color: var(--whiteColor);
+    border-radius: 3px;
+    text-align: center;
+}
+.btn{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 8px;
+    padding: .8rem 1rem;
+    color:  var(--greyText);
+}
+.btn .icon{
+    margin-left: .5rem;
+}
+.btn:hover{
+    color: var(--primaruColor);
+    background-color: var(--paleBlue);
+}
+//pages
+
+.loginPage, .registerPage{
+    height: 100vh;
+    width: 100%;
+    margin: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 7pc 50px rgb(214, 223, 213);
+
+    .container{
+        height: 90vh;
+        width: 60%;
+        margin: auto;
+        justify-content: space-between;
+        border-radius: 10px;
+        background: rgb(243, 243, 248);
+
+        .videoDiv{
+        position: relative;
+        display: flex;
+        flex-basis: 50%;
+        width: 70%;
+        height: 100%;
+        padding: 0 1 54rem;
+        text-align:  center;
+        justify-content: center;
+        flex-direction: column;
+        margin: auto;
+        border-radius: 10px;
+        overflow: hidden;
+       
+        
+
+        video, .footerDiv{
+        position: absolute;
+        
+       
+        }
+        video{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        
+         filter: brightness(60%) contrast(60%);
+
+
+       
+     }
+     .textDiv{
+        position: relative;
+        
+        
+        
+
+        .title{
+        color: white;
+        font-size: 35px;
+        font-weight: 800;
+        background-color: transparent;
+    }
+    }
+    .footerDiv{
+        bottom: 10px;
+        padding: 0 1rem;
+        height: 60px;
+        background: rgba( 255, 255, 255, 0.248);
+        left:10px;
+        right: 10px;
+        justify-content: space-between;
+        backdrop-filter: blur(1px);
+        border-radius: 10px;
+
+        .text{
+            color: white;
+        }
+        .btn{
+            background: var(--paleBlue);
+            columns: var(--primaruColor);
+            color: black;
+            padding: .8rem 1.5rem;
+            border-radius: 10px;
+            font-weight: 400;
+            transition: .3s ease;
+            
+            &:hover{
+                background: var(--hoverColor);
+                color: white;
+            }
+        
+        }
+    }
+    }
+    .formDiv{
+        flex-basis: 50%;
+        margin: auto;
+        flex-direction: column;
+        gap: 1.5rem;
+        transform: translateY(-1rem);
+
+
+        .headerDiv{
+            text-align: center;
+            padding: 1.5rem 0;
+
+            img{
+                width: 60px;
+                padding-bottom: .5rem;
+            }
+            h3{
+                font-size: 25px;
+                color: var(--blackColor);
+                font-weight: 600;
+            }
+        }
+        .form{
+            gap:1rem;
+
+            .inputDiv{
+                .icon{
+                    color: var(--greyText);
+                }
+                input{
+                    background: none;    
+                    outline: none;
+                    border: none;
+                    width: 200px;
+                }
+                label{
+                    color: var(--blackColor);
+                    font-weight: 400;
+                    font-size: 14px;
+                    padding: .5rem 0;
+                    display: block;
+                }
+                .input{
+                    gap: .5rem;
+                    padding: 1rem;
+                    background: var(--inputColor);
+                    border-radius: 10px;
+                }
+            }
+            .btn{
+                padding: .8rem;
+                background: var(--primaruColor);
+                border-radius: 10px;
+                color:var(--bgColor);
+                align-items: center;
+                margin: auto;
+                justify-content: center;
+                font-size: 16pxs;
+                width: 100%;
+                gap: .5rem;
+                transition: .3s ease;
+
+                icon{
+                    font-size: 25px;
+                    transition: .3s ease;
+                }
+                &:hover{
+                    background: var(--hoverColor);
+                    
+                }
+            }
+        }
+        .forgotPassword{
+            font-size: 13px;
+            color: var(--blackColor);
+            opacity: .7;
+            text-align: center;
+        }
+        a{
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+
+}
+    
+}
+    
+
+//media Queries ===>
+@media screen and (max-width:602px){
+    .loginPage, .registerPage{
+        .container{
+            height: 100%;
+            width: 100%;
+            flex-direction: column;
+            padding: .1rem;
+        }
+        .videoDiv{
+            width: 100%;
+
+            .textDiv{
+                .title{
+                   
+                    font-size: 20px;
+                }
+                p{
+                    padding: 1rem;
+                }
+            }
+           
+           
+            .footerDiv{
+                .text{
+                    font-size: 12px;
+                }
+                .btn{
+                    padding: .4rem 1.5rem;
+                }
+            }
+        }
+        .formDiv{
+            gap: 1rem;
+            transform: translateY(-.5rem);
+
+            .headerDiv{
+                padding: 1rem 0;
+
+                img{
+                    width: 40px;
+                }
+                h3{
+                    font-size: 20px;
+                }
+            }
+            .form{
+                gap: .5rem;
+                
+
+                .inputDiv{
+                    input{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        
+
+    }
+}
+
+@media screen and (max-width:678px){
+    .loginPage, .registerPage{
+        .container{
+         .videoDiv{
+            .textDiv{
+                .title{
+                    font-size: 25px;
+                }
+            }
+           
+            .footerDiv{
+                .text{
+                    font-size: 12px;
+                }
+                .btn{
+                    padding: .8rem 1.5rem;
+                }
+            }
+        }
+        .formDiv{
+            .headerDiv{
+                padding: 1rem 0;
+
+                h3{
+                    font-size: 20px;
+                }
+            }
+            .form{
+                .inputDiv{
+                    input{
+                        width: 100%;
+                        max-width: 200px;
+                    }
+                }
+            }
+        }
+        
+
+    }
+}
+}
+
+@media screen and (max-width:927px){
+    .loginPage, .registerPage{
+     .container{
+        width: 85%;
+
+     }
+}
+}
+
+//scroll
+
+::-webkit-scrollbar{
+    display: none;
+}
